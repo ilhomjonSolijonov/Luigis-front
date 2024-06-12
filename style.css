@@ -216,3 +216,66 @@
     background: rgb(33, 34, 59);
     color: rgb(255, 255, 255);
 }
+
+@media screen and (max-width: 767px) {
+    .main-box{
+        overflow: hidden;
+    }
+    .cart{
+        height: 100%;
+        width: 100%;
+        padding: 3px 0;
+        backdrop-filter: blur(20px);
+    }
+    .cart-img1, .cart-img2{
+        display: none;
+    }
+    .container{
+        width: 95%;
+    }
+    .cart-info{
+        margin-bottom: 10px;
+    }
+    .cart-info img{
+        width: 150px;
+    }
+    .cart-info h1{
+        font-size: 25px;
+    }
+    .cart-info p{
+        width: 90%;
+        font-size: 13px;
+    }
+    .cart-link, .cart-link2{
+        height: 50px;
+        font-size: 16px;
+    }
+    .cart-links p{
+        font-size: 14px;
+    }
+
+    /* qr-box........................ */
+    .qr-box{
+        background-color: rgb(0, 0, 0, 0.7);
+    }
+    .add-class{
+        display: flex;
+    }
+    .qr-cart{
+        width: 90%;
+        padding: 15px;
+    }
+    .qr-cart-head h1{
+        font-size: 16px;
+    }
+    .qr-cart-x{
+        font-size: 25px;
+    }
+    .qr-cart-foot div{
+        font-size: 16px;
+    }
+    .qr-img-box{
+        width: 200px;
+        height: 200px;
+    }
+}
