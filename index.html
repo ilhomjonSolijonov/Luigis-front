@@ -3,9 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Welcome to Luigi’s Place</title>
 </head>
 <body>
-    
+    <div class="main-box">
+
+        <div class="cart">
+            <img class="cart-img1" src="./Imgs/Image.png" alt="">
+            <div class="container">
+                <div class="cart-share">
+                    <i class="fa-solid fa-qrcode"></i>
+                    <i class="fa-solid fa-share"></i>
+                </div>
+                <div class="cart-info">
+                   <img src="./Imgs/logotype.png" alt="logotype img"> 
+                   <h1>Welcome to Luigi’s Place</h1>
+                   <p>Welcome to Luigi’s Place, where you can enjoy the authentic flavors of Italian cuisine. We offer you a variety of dishes that showcase the best of Italian food, from soups to savory meat skewers and pastries..</p>
+                </div>
+                <div class="cart-links">
+                    <a class="cart-link" href="https://luigis-hospitality.netlify.app/">
+                        Luigi’s Restorante</>
+                    </a>
+                    <a class="cart-link" href="https://luigis-hospitality.netlify.app/">
+                        Luigi’s Deli & Meat</>
+                    </a>
+                    <a class="cart-link" href="https://luigis-hospitality.netlify.app/">
+                        Location</>
+                    </a>
+                    <p>To contact us, leave a message to the email below</p>
+                    <a class="cart-link2" href="https:gmail.com/">
+                       Join us</>
+                    </a>
+                </div>
+            </div>
+            <img class="cart-img2" src="./Imgs/image2.png" alt="">
+        </div>
+
+        <div class="qr-box">
+            <div class="qr-cart">
+                <div class="qr-cart-head">
+                    <div></div>
+                    <h1>Show this QR Code</h1>
+                    <div class="qr-cart-x"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="qr-img-box">
+                    <img src="./Imgs/qrImg.png" alt="qr img">
+                </div>
+                <div class="qr-cart-foot">
+                    <div class="qr-foot-btn1">
+                        Download this QR code
+                    </div>
+                    <div class="qr-foot-btn2">
+                        Scan a QR code
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        const boss = document.querySelector('.fa-qrcode')
+        boss.addEventListener('click', ()=>{
+            const addd = document.querySelector('.qr-box')
+            addd.classList.toggle('add-class')
+        })
+
+        const bossremove = document.querySelector('.qr-cart-x')
+        bossremove.addEventListener('click', ()=>{
+            const addd = document.querySelector('.qr-box')
+            addd.classList.toggle('add-class')
+        })
+       
+        
+    </script>
 </body>
 </html>
