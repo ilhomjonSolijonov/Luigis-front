@@ -67,6 +67,38 @@
                 </div>
             </div>
         </div>
+
+        <div class="share-box">
+            <div class="qr-cart">
+                <div class="qr-cart-head">
+                    <div></div>
+                    <h1>Social Media</h1>
+                    <div class="share-cart-x"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+                <div class="share-content-box">
+                    <a href="#">
+                        <i class="fa-brands fa-telegram"> <span>Telegram</span></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"> <span>Twitter</span></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"> <span>Instagram</span></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-envelope"> <span>Email</span></i>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+                <div class="share-foot-btn1">
+                    <h2>Luigi's Place</h2>
+                    <i class="fa-regular fa-copy"><span>Copy</span></i>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script>
@@ -77,10 +109,21 @@
             addd.classList.toggle('add-class')
         })
 
+        const boss2 = document.querySelector('.fa-share')
+        boss2.addEventListener('click', ()=>{
+            const addd2 = document.querySelector('.share-box')
+            addd2.classList.toggle('add-class2')
+        })
+
         const bossremove = document.querySelector('.qr-cart-x')
         bossremove.addEventListener('click', ()=>{
             const addd = document.querySelector('.qr-box')
             addd.classList.toggle('add-class')
+        })
+        const bossremove2 = document.querySelector('.share-cart-x')
+        bossremove2.addEventListener('click', ()=>{
+            const addd2 = document.querySelector('.share-box')
+            addd2.classList.toggle('add-class2')
         })
        
         

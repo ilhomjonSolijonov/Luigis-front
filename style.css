@@ -164,13 +164,13 @@
     font-weight: 700;
     text-align: left;
 }
-.qr-cart-x{
+.qr-cart-x, .share-cart-x{
     transition: all 0.4s;
     cursor: pointer;
     font-size: 30px;
     color: rgb(6, 6, 11);
 }
-.qr-cart-x:hover{
+.qr-cart-x:hover, .share-cart-x:hover{
     transform: scale(1.2);
 }
 .qr-img-box{
@@ -194,7 +194,7 @@
     flex-direction: column;
     gap: 10px;
 }
-.qr-cart-foot div{
+.qr-cart-foot div, .share-foot-btn1{
     padding: 12px 0;
     display: flex;
     align-items: center;
@@ -207,7 +207,7 @@
 .qr-cart-foot div:hover{
     transform: scale(1.02);
 }
-.qr-foot-btn1{
+.qr-foot-btn1, .share-foot-btn1{
     box-sizing: border-box;
     border: 1px solid rgb(0, 0, 0);
 }
@@ -216,6 +216,63 @@
     background: rgb(33, 34, 59);
     color: rgb(255, 255, 255);
 }
+
+/* qr-box........................ */
+.share-box{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.5);
+    transition: all 0.4s;
+}
+.add-class2{
+    display: flex;
+}
+.share-foot-btn1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.share-foot-btn1 h2{
+    font-size: 17px;
+    font-weight: 400;
+}
+.share-foot-btn1 i{
+    font-size: 17px;
+    display: flex;
+    gap: 10px;
+    text-transform: capitalize;
+}
+
+.share-content-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: 30px 0 50px;
+}
+.share-content-box a{
+    transition: all 0.4s;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+.share-content-box a:hover{
+    transform: scale(1.02);
+}
+.fa-brands, .share-content-box .fa-regular{
+    display: flex;
+    gap: 10px;
+}
+
 
 @media screen and (max-width: 767px) {
     .main-box{
@@ -255,10 +312,10 @@
     }
 
     /* qr-box........................ */
-    .qr-box{
+    .qr-box, .share-box{
         background-color: rgb(0, 0, 0, 0.7);
     }
-    .add-class{
+    .add-class, .add-class2{
         display: flex;
     }
     .qr-cart{
@@ -268,7 +325,7 @@
     .qr-cart-head h1{
         font-size: 16px;
     }
-    .qr-cart-x{
+    .qr-cart-x, .share-cart-x{
         font-size: 25px;
     }
     .qr-cart-foot div{
